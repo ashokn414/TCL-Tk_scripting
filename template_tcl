@@ -1,0 +1,13 @@
+#! /bin/bash
+echo -e "Please provide filename you want create: \c"
+read -r file
+touch /home/ashok/github_repos/TCL-Tk_scripting/$file.tcl
+chmod +x /home/ashok/github_repos/TCL-Tk_scripting/$file.tcl
+echo '#!/usr/bin/tclsh' > /home/ashok/github_repos/TCL-Tk_scripting/$file.tcl
+echo '#Purpose:' >> /home/ashok/github_repos/TCL-Tk_scripting/$file.tcl
+echo '#Version:' >> /home/ashok/github_repos/TCL-Tk_scripting/$file.tcl
+echo '#Created Date:' `date`  >> /home/ashok/github_repos/TCL-Tk_scripting/$file.tcl
+echo '#Modified Date:'  >> /home/ashok/github_repos/TCL-Tk_scripting/$file.tcl
+echo '#Author: Ashok Kumar ' >> /home/ashok/github_repos/TCL-Tk_scripting/$file.tcl
+echo '#START #' >> /home/ashok/github_repos/TCL-Tk_scripting/$file.tcl
+echo '# END #' >> /home/ashok/github_repos/TCL-Tk_scripting/$file.tcl
