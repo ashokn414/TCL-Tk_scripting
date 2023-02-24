@@ -34,5 +34,9 @@ if {[catch {puts "Result = [Div 10 2]"} errmesg]} {
 	puts "ErrorCode: $errorCode"
 	puts "ErrorInfo: \n$errorInfo\n"
 }
+catch {set file [open myNonexistingfile.txt]} result
+puts "ErrorMsg: $result"
+puts "ErrorCode: $errorCode"
+puts "ErrorInfo:\n$errorInfo\n"
 
 # END #
