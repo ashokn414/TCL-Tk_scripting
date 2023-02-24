@@ -1,0 +1,4 @@
+test
+test
+ When the above code is compiled and executed. 
+ it reads the file created in previous section and produces the following result
